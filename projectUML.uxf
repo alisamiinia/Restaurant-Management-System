@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>14</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1316</x>
+      <y>798</y>
+      <w>476</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;window2&gt;&gt;
+(پنجره ثبت نام مشتری)
+--
+--
+-btn_Check_Register(object,RoutedEventArgs): void
+-AddUser(string,string,string,string,string,string): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>364</x>
+      <y>56</y>
+      <w>266</w>
+      <h>252</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;User&gt;&gt;
+Package::FatClass
+{Some Properties}
+--
+-id: Long
+_-ClassAttribute: Long_
+--
+#Operation(i: int): int
+/+AbstractOperation()/
+--
+Responsibilities
+-- Resp1
+*-- Resp2*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1414</x>
+      <y>994</y>
+      <w>294</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>CheckUserInfo
+--
+--
+-CheckNumber(string): bool
+-isValidEmail(string): void
+-isGoodPassword(string): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1022</x>
+      <y>280</y>
+      <w>294</w>
+      <h>70</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Window&gt;&gt;
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>924</x>
+      <y>546</y>
+      <w>462</w>
+      <h>182</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Shop&gt;&gt;
+(برای مشتری)
+--
+-background: static int
+--
+-save_command(object,RoutedEventArgs): void
+-btn_Cart(object,RoutedEventArgs): void
+-Background_Click(object,RoutedEventArgs): void
+-btn_show_foods(object,RoutedEventArgs): void</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1904</x>
+      <y>378</y>
+      <w>294</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Shop&gt;&gt;
+--
+-background: static int
+
+--
+#Operation(i: int): int
+/+AbstractOperation()/
+--
+Responsibilities
+-- Resp1
+*-- Resp2*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1134</x>
+      <y>336</y>
+      <w>42</w>
+      <h>238</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1204</x>
+      <y>336</y>
+      <w>364</w>
+      <h>490</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+m1=0..n</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0;240.0;110.0;240.0;330.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1540</x>
+      <y>910</y>
+      <w>42</w>
+      <h>112</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-
+bg=black</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>784</x>
+      <y>0</y>
+      <w>490</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>Extention
+(public static)
+--
+--
++CorrectID(string): void
++One_Info(Enum.User,string FileAddress): list&lt;string&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>476</x>
+      <y>546</y>
+      <w>378</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;admin_singin&gt;&gt;
+--
+--
+-btn_admin(object,RoutedEventArgs): void
+-check_username(): bool
+-check_password(): bool</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1106</x>
+      <y>112</y>
+      <w>588</w>
+      <h>714</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0;400.0;50.0;400.0;490.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>658</x>
+      <y>112</y>
+      <w>308</w>
+      <h>462</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>200.0;10.0;200.0;50.0;10.0;50.0;10.0;310.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>728</x>
+      <y>336</y>
+      <w>378</w>
+      <h>238</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-</panel_attributes>
+    <additional_attributes>250.0;10.0;250.0;50.0;10.0;50.0;10.0;150.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>420</x>
+      <y>728</y>
+      <w>462</w>
+      <h>154</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;admin&gt;&gt;
+--
+--
+-btn_foods(object,RoutedEventArgs): void
+-btn_check_orders(object,RoutedEventArgs): void
+-btn_economic_info(object,RoutedEventArgs): void
+-btn_menu(object,RoutedEventArgs): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>1120</y>
+      <w>294</w>
+      <h>266</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;menu&gt;&gt;
+(window for admin)
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>644</x>
+      <y>658</y>
+      <w>42</w>
+      <h>98</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>700</x>
+      <y>1120</y>
+      <w>294</w>
+      <h>266</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;foods&gt;&gt;
+(window for admin)
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>350</x>
+      <y>1120</y>
+      <w>294</w>
+      <h>266</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;EconomicInfo&gt;&gt;
+(window for admin)
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>490</x>
+      <y>868</y>
+      <w>196</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>120.0;10.0;120.0;140.0;10.0;140.0;10.0;180.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>126</x>
+      <y>868</y>
+      <w>476</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>320.0;10.0;320.0;120.0;10.0;120.0;10.0;180.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>714</x>
+      <y>868</y>
+      <w>168</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0;100.0;120.0;100.0;180.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1050</x>
+      <y>1120</y>
+      <w>294</w>
+      <h>266</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Check info&gt;&gt;
+(window for admin)
+--</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>798</x>
+      <y>868</y>
+      <w>434</w>
+      <h>280</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;60.0;290.0;60.0;290.0;180.0</additional_attributes>
+  </element>
+</diagram>

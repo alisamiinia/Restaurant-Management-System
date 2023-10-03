@@ -1,0 +1,30 @@
+﻿<Window x:Class="Online_Restaurant.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Online_Restaurant"
+        mc:Ignorable="d"
+        Title="پنجره ثبت نام" Height="600" Width="350">
+    <Border Padding="5 0 5 5" Background="LightYellow">
+        <Grid>
+            <StackPanel>
+                <TextBlock Text="نام" TextAlignment="Right" FontSize="20" Margin="0 5 5 10"/>
+                <TextBox Name="name" Padding="2" Margin="100 0 5 10"/>
+                <TextBlock Text="نام خانوادگی" TextAlignment="Right" FontSize="20" Margin="0 5 5 10"/>
+                <TextBox Name="fname" Padding="2" Margin="100 0 5 10"/>
+                <TextBlock Text="شماره تماس" TextAlignment="Right" FontSize="20" Margin="0 5 5 10"/>
+                <TextBox Name="number" Padding="2" Margin="100 0 5 10"/>
+                <TextBlock Text="ایمیل" TextAlignment="Right" FontSize="20" Margin="0 5 5 10"/>
+                <TextBox Name="email" Padding="2" Margin="100 0 5 10"/>
+                <TextBlock Text="کد ملی" TextAlignment="Right" FontSize="20" Margin="0 5 5 10"/>
+                <TextBox Name="ID" Padding="2" Margin="100 0 5 10"/>
+                <TextBlock Text="رمز عبور" TextAlignment="Right" FontSize="20" Margin="0 5 5 10"/>
+                <TextBox Name="password" Padding="2" Margin="100 0 5 10"/>
+                <TextBlock Text="تکرار رمز عبور" TextAlignment="Right" FontSize="20" Margin="0 5 5 10"/>
+                <TextBox Name="Rpassword" Padding="2" Margin="100 0 5 10"/>
+                <Button Margin="120 20" Click="btn_Check_Register" Content="ثبت نام" />
+            </StackPanel>
+        </Grid>
+    </Border>
+</Window>

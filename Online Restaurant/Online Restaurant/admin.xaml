@@ -1,0 +1,36 @@
+﻿<Window x:Class="Online_Restaurant.admin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Online_Restaurant"
+        mc:Ignorable="d"
+        Title="admin" Height="400" Width="300">
+    <TabControl Name="AdminTab">
+        <TabItem Header="رستوران">
+            <StackPanel>
+                <Button Content="ویرایش غذا" Margin="100 10" Height="30" Click="btn_foods"/>
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Content="بررسی سفارشات" Margin="10" Height="30" Click="btn_check_orders" Grid.Column="1"/>
+                    <ComboBox Name="order" SelectedIndex="0" Margin="10" Padding="5" Grid.Column="0" >
+                        <ComboBoxItem>تسویه حساب شده</ComboBoxItem>
+                        <ComboBoxItem>تسویه حساب نشده</ComboBoxItem>
+                    </ComboBox>
+                </Grid>
+                <Button Content="اطلاعات اقتصادی" Margin="95 10" Height="30" Click="btn_economic_info"/>
+                <Button Click="btn_menu">
+                    <Image Name="menuimg" Source="/img/menu.png"/>
+                </Button>
+            </StackPanel>
+        </TabItem>
+        <TabItem Header="تنظیمات">
+            <StackPanel>
+                <Button Content="تغییر نام کاربری" Click="btn_username" Margin="90 20" Padding="3"/>
+            </StackPanel>
+        </TabItem>
+    </TabControl>
+</Window>

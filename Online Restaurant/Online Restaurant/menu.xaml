@@ -1,0 +1,55 @@
+﻿<Window x:Class="Online_Restaurant.menu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Online_Restaurant"
+        mc:Ignorable="d"
+        Title="menu" Height="830" Width="800" Background="Black">
+    <StackPanel>
+        <TextBlock Text="منوی غذای رستوران" FontSize="30" Foreground="DarkRed" TextAlignment="Center" Margin="0 15"/>
+        <TextBlock Text="(اطلاعات را وارد کرده و ثبت کنید)" FontSize="25" Foreground="Red" TextAlignment="Center"/>
+        <TextBlock Text="نام غذا" FontSize="20" Foreground="Green" TextAlignment="Right" Margin="10"/>
+        <TextBox Name="FoodName" Margin="400 0 10 5" Padding="3"/>
+        <TextBlock Text="(نوع غذا را انتخاب کنید(یک مورد" FontSize="20" Foreground="Green" TextAlignment="Right" Margin="10"/>
+        <Grid Margin="10">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <CheckBox Content="ساندویج" FontSize="17" Name="Sandwich" Foreground="White" Grid.Column="0"/>
+            <CheckBox Content="پیتزا" FontSize="17" Name="Pizza" Foreground="White" Grid.Column="1"/>
+            <CheckBox Content="همبرگر" FontSize="17" Name="Hamburger" Foreground="White" Grid.Column="2"/>
+            <CheckBox Content="سیب زمینی" FontSize="17" Name="Chips" Foreground="White" Grid.Column="3"/>
+            <CheckBox Content="کنتاکی" FontSize="17" Name="Kentucky" Foreground="White" Grid.Column="4"/>
+            <CheckBox Content="نوشیدنی" FontSize="17" Name="Beverages" Foreground="White" Grid.Column="5"/>
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Calendar Height="170" HorizontalAlignment="Left" Margin="58,32,0,0" Name="MenuCalendar" VerticalAlignment="Top" Width="180" />
+            <StackPanel Grid.Column="1">
+                <TextBlock Text="قیمت تمام شده برای شما" FontSize="20" Foreground="Green" TextAlignment="Right" Margin="10"/>
+                <TextBox Name="FoodPrice" Margin="10 0 10 5" Padding="3"/>
+                <TextBlock Text="تعداد موجود" FontSize="20" Foreground="Green" TextAlignment="Right" Margin="10"/>
+                <TextBox Name="FoodCount" Margin="10 0 10 5" Padding="3"/>
+                <TextBlock Text="توضیحات خصوصی" FontSize="20" Foreground="Green" TextAlignment="Right" Margin="10"/>
+            </StackPanel>
+        </Grid>
+        <TextBox Name="FoodSInfo" Height="40" Margin="10" Padding="3" TextWrapping="Wrap"
+                            VerticalScrollBarVisibility="Visible"
+                            AcceptsReturn="True"/>
+        <TextBlock Text="توضیحات عمومی" FontSize="20" Foreground="Green" TextAlignment="Right" Margin="10"/>
+        <TextBox Name="FoodPInfo" Height="40" Margin="10" Padding="3" TextWrapping="Wrap"
+                            VerticalScrollBarVisibility="Visible"
+                            AcceptsReturn="True"/>
+        <Button Click="SetAddress" Content="آدرس تصویر را برای این غذا انتخاب کنید" Padding="3" Margin="260 10" FontSize="15" Height="45"/>
+        <Button Content="ثبت" FontSize="25" Background="LawnGreen" Padding="3" Margin="360 10" Click="btn_AddMenu"/>
+    </StackPanel>
+</Window>

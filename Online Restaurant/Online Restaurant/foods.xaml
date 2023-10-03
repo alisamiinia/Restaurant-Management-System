@@ -1,0 +1,82 @@
+﻿<Window x:Class="Online_Restaurant.foods"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Online_Restaurant"
+        mc:Ignorable="d"
+        Title="foods" Height="550" Width="300">
+    <StackPanel>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <ComboBox  Name="food" Margin="5" SelectionChanged="Food_SelectionChanged"/>
+            <TextBlock Text="نام غذا را انتخاب کنید" Padding="3" TextAlignment="Right" FontSize="15" Margin="5" Foreground="DarkBlue" Grid.Column="1"/>
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBox Name="name" Padding="3" TextAlignment="Right" FontSize="15" Margin="5"/>
+            <TextBlock Text="نام جدید" Padding="3" TextAlignment="Right" FontSize="15" Margin="5" Foreground="DarkBlue" Grid.Column="1"/>
+        </Grid>
+        <Grid Margin="10 0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <CheckBox Content="ساندویج" FontSize="12" Name="Sandwich" Foreground="DarkBlue" Grid.Column="0"/>
+            <CheckBox Content="پیتزا" FontSize="12" Name="Pizza" Foreground="DarkBlue" Grid.Column="1"/>
+            <CheckBox Content="همبرگر" FontSize="12" Name="Hamburger" Foreground="DarkBlue" Grid.Column="2"/>
+        </Grid>
+        <Grid Margin="10 5 10 0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <CheckBox Content="سیب زمینی" FontSize="12" Name="Chips" Foreground="DarkBlue" Grid.Column="0"/>
+            <CheckBox Content="کنتاکی" FontSize="12" Name="Kentucky" Foreground="DarkBlue" Grid.Column="1"/>
+            <CheckBox Content="نوشیدنی" FontSize="12" Name="Beverages" Foreground="DarkBlue" Grid.Column="2"/>
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBox Name="price" Padding="3" TextAlignment="Right" FontSize="15" Margin="5"/>
+            <TextBlock Text="قیمت" Padding="3" TextAlignment="Right" FontSize="15" Margin="5" Foreground="DarkBlue" Grid.Column="1"/>
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBox Name="number" Padding="3" TextAlignment="Right" FontSize="15" Margin="5"/>
+            <TextBlock Text="تعداد موجود" Padding="3" TextAlignment="Right" FontSize="15" Margin="5" Foreground="DarkBlue" Grid.Column="1"/>
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBox Name="SD" Padding="3" TextAlignment="Right" FontSize="15" Margin="5"/>
+            <TextBlock Text="توضیحات خصوصی" Padding="3" TextAlignment="Right" FontSize="15" Margin="5" Foreground="DarkBlue" Grid.Column="1"/>
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBox Name="Gd" Padding="3" TextAlignment="Right" FontSize="15" Margin="5"/>
+            <TextBlock Text="توضیحات عمومی" Padding="3" TextAlignment="Right" FontSize="15" Margin="5" Foreground="DarkBlue" Grid.Column="1"/>
+        </Grid>
+        <Calendar Name="calendar" Height="170" HorizontalAlignment="Center"/>
+        <Button Click="SetAddress" Content="آدرس تصویر را برای این غذا انتخاب کنید" Padding="3" Margin="15 0" Background="Wheat" FontSize="15" Height="45"/>
+        <Button Name="btn_select" Content="ثبت تغییرات" Margin="72 5 72 0" Background="Green" Foreground="White" Padding="5" Click="Btn_select_Click"/>
+    </StackPanel>
+</Window>
